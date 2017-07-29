@@ -1,1 +1,3 @@
 # sundry
+
+This repository aims at noting some temporary notes...
