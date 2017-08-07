@@ -24,3 +24,15 @@ wget(curl)
 apt-get(dpkg)
 yum(rpm)
 mount(umount)
+
+###############################################
+# general command line windows
+Ctrl+A: goto the top of line(TOL)
+Ctrl+E: goto the end of line(EOL)
+Alt+->:move a word to the right
+Alt+<-:move a word to the left
+Ctrl+U:delete chars from the cursor to TOL
+Ctrl+K:delete chars from the cursot to EOL
+Ctrl+C:terminate operation
+Ctrl+D:run operation to background
+Ctrl+L:clear the screen
