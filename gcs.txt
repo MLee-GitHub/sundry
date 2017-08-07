@@ -1,0 +1,26 @@
+# general commands set(gcs) for linux
+cd
+touch
+mkdir
+rm
+pwd
+ls
+vim(vi、nano)
+mv
+cp
+man(info、help)
+cat(tac、less、more、head、tail)
+shutdown(reboot、poweroff、init)
+grep(awk、sed)
+find(whereis which)
+tar
+chmod
+chown(chgrp)
+usermod
+su -
+useradd(groupadd) userdel(groupdel)
+passwd
+wget(curl)
+apt-get(dpkg)
+yum(rpm)
+mount(umount)
