@@ -1,4 +1,5 @@
-# general commands set(gcs) for linux
+# general commands set(gcs) about linux
+################## Linux OS ###################
 cd
 touch
 mkdir
@@ -25,7 +26,7 @@ apt-get(dpkg)
 yum(rpm)
 mount(umount)
 
-###############################################
+################## Terminal ######################
 # general command line windows
 Ctrl+A: goto the top of line(TOL)
 Ctrl+E: goto the end of line(EOL)
@@ -36,3 +37,39 @@ Ctrl+K:delete chars from the cursot to EOL
 Ctrl+C:terminate operation
 Ctrl+D:run operation to background
 Ctrl+L:clear the screen
+
+################ Vi(Vim) ########################
+vim [filename] +n:enter filename goto line number of n
+insert mode(i,I,o,O,a,A,s,S)
+redo:Ctrl+r
+undo:u
+r:replace a character
+R(Shift+r):replace mode
+v(Ctrl+v,Shift+v(V)):enter visual mode --> select text by direction key
+d:cut selected text
+y:copy selected text
+ndh:cut n chars towards head
+ndl:cut n chars towards later
+nyh:copy n chars towards head
+nyl:cut n chars towards later
+ndd:cut n lines(dd-->cut a line)
+nyy:copy n lines(yy-->copy a line)
+p:paste text from clipboard
+x:equivalent to del key  (nx)
+X:equivalent to backspace key
+d0:cut text from cursor(exclusive) to head
+D:cut text from cursor(inclusive) to tail
+h j k l: equivalent to direction key
+$:top of line
+^:end of line
+M:middle of current page
+nG(ngg):goto line number of n(gg-->the first line(1gg,1G),G-->the last line)
+/text(?text): search text use n(N) key to find text one by one
+
+:r [command|file]-->write it to the next line of cursor
+ZZ-->:wq :x
+ZQ--> :q!
+X-->encryption
+e!:discard all chages(not written)
+:!command -->e.g. :!ls execute command of `ls` 
+												2017年08月 8日 20:27:40
