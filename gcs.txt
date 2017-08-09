@@ -81,7 +81,7 @@ gUU -->change line of cursor into upper-case
 :n,$s/text1/text2/g -->replace all text1 into text2 from n to the last line of file
 :%s/text1/text2 -->replace the first text1 into text2 of all lines
 :%s/text1/text2/g -->replace all text1(each line) into text2 of all lines
-#As several commands above, if add `/c` which can replace text1 into text2 by interaction mode, e.g. :%s/text1/text2/gc -->you can replace all the text1(the whole file) into text2 by iteraction mode :s/text1/text2/c  :,$s/text1/text2/c -->replace the first text1 of each line into text2 (from current line to the last line of file)by interaction mode
+#As several commands above, if add `/c`(confirm) which can replace text1 into text2 by interaction mode, e.g. :%s/text1/text2/gc -->you can replace all the text1(the whole file) into text2 by iteraction mode :s/text1/text2/c  :,$s/text1/text2/c -->replace the first text1 of each line into text2 (from current line to the last line of file)by interaction mode
 
 :r [command|file]-->write it to the next line of cursor
 ZZ-->:wq :x
