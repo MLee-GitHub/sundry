@@ -55,8 +55,8 @@ nyl:cut n chars towards later
 ndd:cut n lines(dd-->cut a line)
 nyy:copy n lines(yy-->copy a line)
 p:paste text from clipboard
-x:equivalent to del key  (nx)
-X:equivalent to backspace key
+x:equivalent to del key  (nx equivalent to ndl)
+X:equivalent to backspace key (nX equivalent to ndh)
 d0:cut text from cursor(exclusive) to head
 D:cut text from cursor(inclusive) to tail
 h j k l: equivalent to direction key
