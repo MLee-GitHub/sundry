@@ -60,16 +60,32 @@ X:equivalent to backspace key
 d0:cut text from cursor(exclusive) to head
 D:cut text from cursor(inclusive) to tail
 h j k l: equivalent to direction key
+b -->jump cursor step by word towards head
+w -->jump cursor step by word towards tail
 $:top of line
 ^:end of line
 M:middle of current page
 nG(ngg):goto line number of n(gg-->the first line(1gg,1G),G-->the last line)
 /text(?text): search text use n(N) key to find text one by one
+~ -->change character case of cursor
+guw -->change word of cursor into lower-case
+gUw -->change word of cursor into upper-case
+guu -->change line of cursor into lower-case
+gUU -->change line of cursor into upper-case
+
+
+:s/text1/text2 -->only replace the first text1 into text2 of current line (:n --> move cursor to line number of n)
+:s/text1/text2/g -->replace all text1 into text2 of current line
+:n,$s/text1/text2 -->only replace the first text1 into text2 from n to the last line of file
+:n,$s/text1/text2/g -->replace all text1 into text2 from n to the last line of file
+:%s/text1/text2 -->replace the first text1 into text2 of all lines
+:%s/text1/text2/g -->replace all text1(each line) into text2 of all lines
+#As several commands above, if add `/c` which can replace text1 into text2 by interaction mode, e.g. :%s/text1/text2/gc -->you can replace all the text1(the whole file) into text2 by iteraction mode :s/text1/text2/c  :,$s/text1/text2/c -->replace the first text1 of each line into text2 (from current line to the last line of file)by interaction mode
 
 :r [command|file]-->write it to the next line of cursor
 ZZ-->:wq :x
 ZQ--> :q!
 X-->encryption
-e!:discard all chages(not written)
+e!:discard all changes(not written)
 :!command -->e.g. :!ls execute command of `ls` 
 												2017年08月 8日 20:27:40
