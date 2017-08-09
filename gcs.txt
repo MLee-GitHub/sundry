@@ -30,8 +30,8 @@ mount(umount)
 # general command line windows
 Ctrl+A: goto the top of line(TOL)
 Ctrl+E: goto the end of line(EOL)
-Alt+->:move a word to the right
-Alt+<-:move a word to the left
+Alt+->:move cursor towards the right step by word
+Alt+<-:move cursor towards the left step by word
 Ctrl+U:delete chars from the cursor to TOL
 Ctrl+K:delete chars from the cursot to EOL
 Ctrl+C:terminate operation
@@ -66,6 +66,7 @@ $:top of line
 ^:end of line
 M:middle of current page
 nG(ngg):goto line number of n(gg-->the first line(1gg,1G),G-->the last line)
+:n --> move the cursor into line number of n(equivalent to `nG OR ngg`)
 /text(?text): search text use n(N) key to find text one by one
 ~ -->change character case of cursor
 guw -->change word of cursor into lower-case
