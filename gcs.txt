@@ -77,6 +77,7 @@ gUU -->change line of cursor into upper-case
 
 :s/text1/text2 -->only replace the first text1 into text2 of current line (:n --> move cursor to line number of n)
 :s/text1/text2/g -->replace all text1 into text2 of current line
+:m,ns/text1/text2 --> replace the first text1 of each line from m to n(if n is to $ represent the last line, like the following...)
 :n,$s/text1/text2 -->only replace the first text1 into text2 from n to the last line of file
 :n,$s/text1/text2/g -->replace all text1 into text2 from n to the last line of file
 :%s/text1/text2 -->replace the first text1 into text2 of all lines
