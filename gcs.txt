@@ -8,11 +8,11 @@ pwd
 ls
 vim(vi、nano)
 mv
-cp
+cp  dd
 man(info、help)
 cat(tac、less、more、head、tail)
 shutdown(reboot、poweroff、init)
-grep(awk、sed)
+grep(awk、sed)printf
 find(whereis which)
 tar
 chmod
@@ -24,8 +24,22 @@ passwd
 wget(curl)
 apt-get(dpkg)
 yum(rpm)
-mount(umount)
-
+mount(umount) # mount point equivalent to drive letter(C: D: ... ) of Windows,if you want to access a device(like cdrom,floppy ...),you need mount device to a mount point
+write(wall mail)
+ping ifconfig   setup
+netstat -an
+last(lastlog)
+df
+du -sh 
+dumpe2fs partition filename
+fdisk -->partition fdisk /dev/sda
+mkfs -->formation mkfs -t ext4 /dev/sda1
+mount
+mount -a -->according to fstab file auto-mount
+free -->check memory 
+mkswap
+swapon
+swapoff
 ################## Terminal ######################
 # general command line windows
 Ctrl+A: goto the top of line(TOL)
