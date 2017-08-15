@@ -104,4 +104,9 @@ ZQ--> :q!
 X-->encryption
 e!:discard all changes(not written)
 :!command -->e.g. :!ls execute command of `ls` 
+######quick comment######
+1) ctrl+v enter the mode of visual-block,then shift+i enter insert mode at top-of-line,inputannotation character(like # // ...),finally,Esc   --> comment
+   ctrl+v to select annotation charater, then d to delete them --> uncomment
+2) :n1,n2s/^/#  :n1,n2s#^#// :n1,n2s/^/\/\/  --> comment
+   :n1,n2s/#/   :n1,n2s/\/\//                --> uncomment
 												2017年08月 8日 20:27:40
