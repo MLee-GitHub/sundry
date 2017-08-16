@@ -1,3 +1,5 @@
+if you change Windows size of font, Zoom in-->ctrl+=(ctrl+shift+=)  Zoom out-->ctrl+- resize-->ctrl+0
+
 # general commands set(gcs) about linux
 ################## Linux OS ###################
 cd
@@ -46,11 +48,13 @@ Ctrl+A: goto the top of line(TOL)
 Ctrl+E: goto the end of line(EOL)
 Alt+->:move cursor towards the right step by word
 Alt+<-:move cursor towards the left step by word
-Ctrl+U:delete chars from the cursor to TOL
+Ctrl+U:delete chars from the cursor to TOL --> ctrl+y can paste text of delete by ctrl+u(k)
 Ctrl+K:delete chars from the cursot to EOL
+ctrl+w:delete a word towards the left
+ctrl+b:delete a word towards the right
 Ctrl+C:terminate operation
 Ctrl+D:run operation to background
-Ctrl+L:clear the screen
+Ctrl+L:clear the screen (clear reset)
 
 ################ Vi(Vim) ########################
 vim [filename] +n:enter filename goto line number of n
@@ -71,8 +75,9 @@ nyy:copy n lines(yy-->copy a line)
 p:paste text from clipboard
 x:equivalent to del key  (nx equivalent to ndl)
 X:equivalent to backspace key (nX equivalent to ndh)
-d0:cut text from cursor(exclusive) to head
-D:cut text from cursor(inclusive) to tail
+d0:cut text from cursor(exclusive) to head ( the same as d^ )
+daw: delete a word (dw: delete from cursor to end of current word)
+D:cut text from cursor(inclusive) to tail (the same as d$)
 h j k l: equivalent to direction key
 b -->jump cursor step by word towards head
 w -->jump cursor step by word towards tail
@@ -98,15 +103,24 @@ gUU -->change line of cursor into upper-case
 :%s/text1/text2/g -->replace all text1(each line) into text2 of all lines
 #As several commands above, if add `/c`(confirm) which can replace text1 into text2 by interaction mode, e.g. :%s/text1/text2/gc -->you can replace all the text1(the whole file) into text2 by iteraction mode :s/text1/text2/c  :,$s/text1/text2/c -->replace the first text1 of each line into text2 (from current line to the last line of file)by interaction mode
 
-:r [command|file]-->write it to the next line of cursor
+insert mode --> command mode (ctrl+c Or Esc)
+if you define shortcut 'ctrl+p'(), you need press ctrl+v+p at the same time(Or ctrl+v,ctrl+p)
+:r [command|filename]-->write it to the next line of cursor
 ZZ-->:wq :x
 ZQ--> :q!
 X-->encryption
 e!:discard all changes(not written)
 :!command -->e.g. :!ls execute command of `ls` 
+:wq newfilename -->save as
+:w newfilename -->save as
 ######quick comment######
 1) ctrl+v enter the mode of visual-block,then shift+i enter insert mode at top-of-line,inputannotation character(like # // ...),finally,Esc   --> comment
    ctrl+v to select annotation charater, then d to delete them --> uncomment
 2) :n1,n2s/^/#  :n1,n2s#^#// :n1,n2s/^/\/\/  --> comment
    :n1,n2s/#/   :n1,n2s/\/\//                --> uncomment
+ 
+use 'map' define shortcut to comment(e.g.  :map  0i#<Esc> --> comment  :map  0x -->uncomment)
+:map  Gomleewhs@gmail.com  --> insert special text (:unmap   --> cancel)
+ab text1 text2  --> if you type text1 at the insert mode,then <Enter>, text1 will turn into text2  (e.g.  ab main public void main(String[] args)) (:unab main  -->cancel)
+
 												2017年08月 8日 20:27:40
