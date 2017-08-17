@@ -2,6 +2,8 @@ if you change Windows size of font, Zoom in-->ctrl+=(ctrl+shift+=)  Zoom out-->c
 
 # general commands set(gcs) about linux
 ################## Linux OS ###################
+type
+ps(top)
 cd
 touch
 mkdir
@@ -77,6 +79,7 @@ x:equivalent to del key  (nx equivalent to ndl)
 X:equivalent to backspace key (nX equivalent to ndh)
 d0:cut text from cursor(exclusive) to head ( the same as d^ )
 daw: delete a word (dw: delete from cursor to end of current word)
+yaw: copy a word
 D:cut text from cursor(inclusive) to tail (the same as d$)
 h j k l: equivalent to direction key
 b -->jump cursor step by word towards head

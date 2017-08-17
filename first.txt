@@ -7,4 +7,20 @@
 如：sda1 sda2 sda3 sda4 sda5 sda6 --> 其中sda1 sda2 sda3为主分区，sda4为扩展分区，其中又有两个逻辑分区sda5 sda6
 如：sda1 sda2 sda5 sda6 sda7 --> 其中sda1为主分区，sda2为扩展分区，sda5 sda6 sda7为逻辑分区
 
-
+chmod 4775 filename --> setuid 4  (passwd)
+chmod u+s filename --> setuid
+chmod 4775 filename --> setuid
+chmod 775 filename --> cancel setuid
+chmod u-s filename --> cancel setuid
+chmod g+s filename|directory --> setgid
+chmod 2775 filename|directory --> setgid
+chmod 775 filename|directory --> cancel setgid
+chmod g-s filename|directory--> cancel setgid
+chmod o+t directory--> sticky bit
+chmod 1775 directory--> cancel setuid
+chmod o-t directory--> cancel setuid
+setgid  2
+sticky bit  1
+setuid --> file
+setgid --> file|directory
+sticky bit --> directory (/tmp)
